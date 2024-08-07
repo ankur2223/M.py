@@ -8,10 +8,10 @@ import os
 
 
 # insert your Telegram bot token here
-bot = telebot.TeleBot('7342071831:AAHfKI4K-rFEuwlty8ltXmaEw3EnBieaXnI')
+bot = telebot.TeleBot('7191400201:AAFdekSQYC-FSQBedqllrx6lMA0S8nwsvb8')
 
 # Admin user IDs
-admin_id = ["6719970743","6034678307"]
+admin_id = ["5666606072","6929246588"]
 
 # File to store allowed user IDs
 USER_FILE = "users.txt"
@@ -213,7 +213,7 @@ def start_attack_reply(message, target, port, time):
     user_info = message.from_user
     username = user_info.username if user_info.username else user_info.first_name
     
-    response = f"{username}, 🚀 𝐀𝐓𝐓𝐀𝐂𝐊 𝐒𝐓𝐀𝐑𝐓𝐄𝐃 🚀\n\n🎯𝐓𝐚𝐫𝐠𝐞𝐭: {target}\n🔗𝐏𝐨𝐫𝐭: {port}\n⏰𝐓𝐢𝐦𝐞: {time} 𝐒𝐞𝐜𝐨𝐧𝐝𝐬\n⚙️𝐌𝐞𝐭𝐡𝐨𝐝: BGMI\n@DEVILxVIPxPAID"
+    response = f"{username}, 🩸 𝐀𝐓𝐓𝐀𝐂𝐊 𝐒𝐓𝐀𝐑𝐓𝐄𝐃 🩸\n\n🎯𝐓𝐚𝐫𝐠𝐞𝐭: {target}\n🔗𝐏𝐨𝐫𝐭: {port}\n⏰𝐓𝐢𝐦𝐞: {time} 𝐒𝐞𝐜𝐨𝐧𝐝𝐬\n⚙️𝐌𝐞𝐭𝐡𝐨𝐝: BGMI\n@DEVILxVIPxPAID"
     bot.reply_to(message, response)
 
 # Dictionary to store the last time each user ran the /bgmi command
@@ -292,8 +292,8 @@ def show_help(message):
 🤖 To See Admin Commands:
 💥 /admincmd : Shows All Admin Commands.
 
-Buy From :- @DEVILxVIPxPAID
-Official Channel :- https://t.me/+S3EDuNxPM2Q2YjNl
+Buy From :- @Todo_v8
+Official Channel :- https://t.me/+XEaNesda8_41MGY9
 '''
     for handler in bot.message_handlers:
         if hasattr(handler, 'commands'):
@@ -310,7 +310,7 @@ def welcome_start(message):
     user_name = message.from_user.first_name
     response = f'''👋🏻Welcome to DEVIL FREE DDOS🚀, {user_name}! ⚠️ PAID BHI SASTA HAI KHARID LO ABHI .
 🤖Try To Run This Command : /help 
-✅Join :- https://t.me/+S3EDuNxPM2Q2YjNl'''
+✅Join :- https://t.me/+XEaNesda8_41MGY9'''
     bot.reply_to(message, response)
 
 @bot.message_handler(commands=['rules'])
